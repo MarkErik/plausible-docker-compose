@@ -48,7 +48,4 @@ networks:
     external: true
   services:
     external: true
-      
-volumes:
-  geoip:
-    driver: local
+
