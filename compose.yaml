@@ -2,6 +2,8 @@ services:
   mail:
     image: bytemark/smtp
     restart: unless-stopped
+    env_file:
+      - plausible-conf.env
     networks:
       - plausible-internal
 
