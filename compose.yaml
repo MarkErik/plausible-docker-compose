@@ -39,6 +39,11 @@ services:
       - plausible_db
       - plausible_events_db
       - mail
+    environment:
+      #Nginx-Proxy Settings
+      - VIRTUAL_HOST=
+      - LETSENCRYPT_HOST=
+      - LETSENCRYPT_EMAIL=
     env_file:
       - plausible-conf.env
     networks:
